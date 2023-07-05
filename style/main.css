@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #header-css{
   background-color: black;
@@ -94,7 +95,23 @@ color: rgb(6, 220, 6);
     #section1 h3{
   text-align: center;
 }
+.footer-first-div{
+display: block;
   }
+  .spotify-bottom-logo{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+  font-size: 80px;
+
+  }
+  .spotify-bottom-logo img{
+  width: 120px;
+  height: 120px;
+  }
+}
 #section2 h3{
   font-size: 40px;
   padding-top: 50px;
@@ -239,18 +256,20 @@ footer{
   text-align: center;
   justify-content: center;
   padding-top: 120px;
+
 }
 footer ul li{
   list-style-type: none;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: calc(14px + 0.5vw);
 }
 footer ul{
   margin-top: 0px;
 }
 footer div{
   display: flex;
-  font-size: 35px;
+  font-size: calc(22px + 0.5vw);
+
 }
 footer h5{
   color: grey;
@@ -266,9 +285,7 @@ footer h5{
 .footer-a img:hover{
   background-color: rgb(7, 200, 7);
 }
-.footer-a{
-  margin-left: 340px;
-}
+
 .footer-a a{
   background-color: rgb(66, 66, 66);
   border-radius: 50%;
@@ -290,15 +307,14 @@ footer h5{
 }
 .footer-bottom-div>ul{
   display: flex;
-  gap: 30px;
+  gap: 10px;
 }
 .footer-bottom-div{
-  justify-content: space-around;
-  margin:0px 190px;
+  justify-content: center;
 }
 .footer-bottom-div ul li a{
   color: rgb(166, 164, 164);
-  font-size: 17px;
+  font-size: calc(10px + 0.5vw)
 }
 .footer-bottom-div ul li a:hover{
   color: rgb(7, 200, 7);
