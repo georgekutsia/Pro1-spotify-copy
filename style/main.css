@@ -7,7 +7,12 @@ body{
   justify-content: space-around;
   align-items: center;
   color: white;
-  font-size: 30px;
+  font-size: calc(15px + 1vw);
+}
+.img-spotify{
+  width:calc(20px + 1vw); 
+  height:calc(20px + 1vw); 
+
 }
 #header-css div{
   display: flex;
@@ -16,7 +21,7 @@ body{
 #header-css ul{
   display: flex;
   color: white;
-  font-size: 20px
+  font-size: calc(13px + 0.4vw);
 }
 #header-css ul li{
 margin-right: 20px;
@@ -31,14 +36,19 @@ color: rgb(6, 220, 6);
 }
 #section1{
   background-color: #1d75de;
-  padding:4% 24%;
   color: white;
+  justify-content: center;
+  display: flex;
+}
+.section1-div{
+  padding: 50px 20px;
+  width: 700px;
 }
 #section1 h2{
-font-size: 45px;
+  font-size: calc(26px + 1vw);
 }
 #section1 h3{
-  font-size: 29px;
+  font-size: calc(10px + 0.8vw);
 }
 #section1 h4{
   font-size: 15px;
@@ -75,7 +85,16 @@ font-size: 45px;
   background-color: white;
   margin-top: -50px;
 }
-
+@media (max-width: 768px) {
+    .button-1,
+    .button-2 {
+      width: 100%; 
+    }
+    #section1 h2,
+    #section1 h3{
+  text-align: center;
+}
+  }
 #section2 h3{
   font-size: 40px;
   padding-top: 50px;
@@ -85,6 +104,7 @@ font-size: 45px;
 #section2 div {
 display: flex;
 justify-content: center;
+flex-wrap: wrap;
 }
 #section2 img{
   width: 150px;
@@ -125,7 +145,7 @@ display: flex;
 justify-content: center;
 padding-top: 10px;
 padding-bottom: 120px;
-height: 700px;
+flex-wrap: wrap;
 }
 
 #section3 h3{
@@ -186,7 +206,7 @@ display: flex;
 .article-final{
   font-size: 15px;
 }
- span{
+  span{
   text-decoration: underline;
 }
 .section-align{
@@ -212,14 +232,12 @@ margin-top: 45px;
 
 footer{
   background-color: black;
-  height: 560px;
   color: white;
 }
 .footer-first-div{
   color: white;
   text-align: center;
   justify-content: center;
-  display: flex;
   padding-top: 120px;
 }
 footer ul li{
