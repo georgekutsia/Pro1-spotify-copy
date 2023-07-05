@@ -28,6 +28,29 @@ body{
 margin-right: 20px;
 list-style-type: none;
 }
+.nav-top ul li:hover{
+  animation: shake 0.5s;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-3px, 3px);
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: translate(3px, -3px);
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: translate(-3px, 3px);
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 a{
 text-decoration: none;
 color: white;
@@ -46,14 +69,26 @@ color: rgb(6, 220, 6);
   width: 700px;
 }
 #section1 h2{
-  font-size: calc(26px + 1vw);
+  font-size: calc(20px + 1vw);
+  transition: 0.4s ease-in-out;
+}
+#section1 h2:hover{
+  letter-spacing: 1.3px;
 }
 #section1 h3{
-  font-size: calc(10px + 0.8vw);
+  font-size: calc(7px + 0.8vw);
+  transition: 0.4s ease-in-out;
+}
+#section1 h3:hover{
+  letter-spacing: -0.8px;
 }
 #section1 h4{
   font-size: 15px;
   font-weight: 100;
+  transition: 1s ease-in-out;
+}
+#section1 h4:hover{
+  opacity: 0;
 }
 .button-1{
   width: 150px;
@@ -66,6 +101,9 @@ color: rgb(6, 220, 6);
 }
 .button-1:hover{
   scale: 1.1;
+  background: linear-gradient(to right, transparent, transparent, transparent, transparent, white, transparent, transparent, transparent, transparent);
+  animation: moveGradient 1s ease-in-out infinite;
+  background-size: 400px;
 }
 .button-2{
   width: 155px;
@@ -80,6 +118,20 @@ color: rgb(6, 220, 6);
 }
 .button-2:hover{
   scale: 1.1;
+  background: linear-gradient(to right, transparent, transparent, transparent, transparent, white, transparent, transparent, transparent, transparent);
+  animation: moveGradient 1s ease-in-out infinite;
+  background-size: 400px;
+}
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 #section2{
   text-align: center;
@@ -242,11 +294,11 @@ footer ul li{
   font-size: calc(14px + 0.5vw);
 }
 footer ul{
-  text-align: center;  
   margin-top: 0px;
 }
 footer div{
   display: flex;
+  justify-content: space-evenly;
   font-size: calc(22px + 0.5vw);
 
 }
@@ -357,6 +409,13 @@ background-color: rgb(7, 200, 7);
 .ham{
   display: inline-block;
 }
+.footer-bottom-div ul{
+  flex-direction: column;
+}
+.footer-bottom-div ul div{
+  gap: 80px;
+}
+
 }
 
 .nav-to ul{
